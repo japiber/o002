@@ -1,0 +1,22 @@
+[package]
+name = "o002"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+edition = "2021"
+repository = "https://github.com/japiber/o002"
+keywords = ["message-bus"]
+categories = ["development-tools"]
+authors = [
+    "Juan Antonio Piñero <japiber@gmail.com>"
+]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+lazy_static = { version = "1.4", features = [] }
+uuid = { version = "1.8", features = ["v4", "fast-rng", "macro-diagnostics", "serde"] }
+serde = { version = "1.0", features = ["derive", "std"] }
+serde_json = { version = "1.0", features = [] }
+tokio = { version = "1.37", features = ["full"] }
+tracing = { version = "0.1", features = ["default"] }
+async-trait = "0.1"
